@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Sentimen Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+        .positive {
+            color: green;
+        }
+        .negative {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analisis Sentimen Sederhana</h1>
+        <p>Masukkan ulasan produk Anda di bawah ini, lalu klik "Analisis" untuk mengetahui sentimennya.</p>
+        <textarea id="review" placeholder="Tulis ulasan produk Anda di sini..."></textarea>
+        <button onclick="analyzeSentiment()">Analisis</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function analyzeSentiment() {
+            // Ambil teks ulasan dari textarea
+            const review = document.getElementById('review').value.toLowerCase();
+
+            // Kata kunci positif dan negatif
+            const positiveWords = ['bagus', 'memuaskan', 'puas', 'rekomendasi', 'baik', 'keren', 'suka'];
+            const negativeWords = ['buruk', 'kecewa', 'jelek', 'tidak puas', 'mengecewakan', 'parah'];
+
+            let positiveScore = 0;
+            let negativeScore = 0;
+
+            // Hitung kata kunci yang muncul dalam ulasan
+ 
+        }
